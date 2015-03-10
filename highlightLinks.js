@@ -1,4 +1,3 @@
-
 var a = document.getElementsByTagName('a');
 var aL = a.length,
     lM = [],
@@ -33,6 +32,9 @@ document.onkeydown = function(e) {
 
     timer = window.setTimeout(function() {
         seq = [];
-        lM[parseInt(total.join(''), 10)].click();
+        var aa = lM[parseInt(total.join(''), 10)];
+        if (aa) {
+            aa.click();
+        }
     }, 650);
 }
