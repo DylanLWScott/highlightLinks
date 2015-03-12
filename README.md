@@ -20,7 +20,7 @@ So for the below example, 'hl' is the keyword.  On any page, you would get to th
 ####Usage
 Trigger the script to start with either your shortcut to the bookmark or clicking the bookmark.  You should see links with numbers to the left of the link text.  To navigate or click that link: just type the highlighted number.  If it was just a navigation to a different spot on the same page (like a menu), you will still see the highlighted numbers and be able to enter in a new value (of course until you have navigated off of the page).
 
-You can use the 'ECS' key to stop remove the added highlighting and navigation of the bookmark.
+You can use the 'ESC' key to remove the added highlighting and navigation of the bookmark.
 
 #####Screen Shot - Links numbered for quick navigation by highlightLinks.js
 ![highlightLinks.js in use] (imgs/hlExample.png)
