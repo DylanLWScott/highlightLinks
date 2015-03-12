@@ -5,29 +5,25 @@ Bookmarklet to add number key shortcuts to urls on a page
 Saw Vimium feature of hightlighting links and wanted to make a simple js to see if I could just throw something together.  This is a personal tool/project and is not as robust as the other great tools already out there.
 
 ####Installation
-In /user/plugins, create a new folder named filter-code.
-Drop these files in that directory.
-Go to the Plugins administration page (*Manage Plugins*)->and activate the plugin: *Status Code by Keyword*.
-After activation, you should see *Status Code Page* listed as a page under *Manage Plugins*
+One option is to create a bookmark and place the code from the file: highlightLinks.min.js as the url
+You just click the bookmark when you want links numbered and highlighted for quick navigation.
+
+However, the suggested setup would be to add it as a Custom Search Engine in Chrome.  Define your keyword and the url would be the code from the file: highlightLinks.min.js.
+So for the below example, 'hl' is the keyword.  On any page, you would get to the omnibox (shortcut Command-L (Mac) or Alt-D on Windows), enter in 'hl' and enter.  This should run the bookmark code without needing to leave the keyboard.
+
 #####Screen Shot - Setting up bookmarklet for Chrome
 ![Setting up bookmarklet for Chrome] (imgs/bookmarkletshortcut.png)
 
 ####Usage
-Add keyword to 3XX status codes associations from the dropdowns presented.  The 
-table will show any existing mapping.  If no mapping is shown or defined, 301 is used as the default code.
+Trigger the script to start with either your shortcut to the bookmark or clicking the bookmark.  You should see links with numbers to the left of the link text.  To navigate or click that link: just type the highlighted number.  If it was just a navigation to a different spot on the same page (like a menu), you will still see the highlighted numbers and be able to enter in a new value (of course until you have navigated off of the page).
+
+You can use the 'ECS' key to stop remove the added highlighting and navigation of the bookmark.
 
 #####Screen Shot - Links numbered for quick navigation by highlightLinks.js
 ![highlightLinks.js in use] (imgs/hlExample.png)
 
 ####Credits
 Vimium plugin for the idea
+
 Google Closure complier for creating min.js and pretty-print versions. 
-
-
-
-
-
-To use, would set up a custom Chrome search engine, add the text of the highlightLinks.min.js file as the url.  Use whatever keyword you choose to trigger it.  Type the number before the link to click it->and press the ESC key to remove the numbers.
-
-##
 
